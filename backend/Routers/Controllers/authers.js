@@ -3,7 +3,12 @@ const autherModel = require("../../models/Auther");
 const getAuthers = (req , res) => {
     autherModel
     .find()
-    .then
+    .then((result) => {
+        res.status(201).json(result);
+      })
+      .catch((err) => {
+        res.status(400).json(err);
+      });
 }
 
 const newAuther = async (req, res) => {
@@ -29,6 +34,7 @@ const newAuther = async (req, res) => {
 
 
 module.exports = {
-    newAuther
+    newAuther,
+    getAuthers
   };
 
