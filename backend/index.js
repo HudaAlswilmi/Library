@@ -12,6 +12,12 @@ app.use(cors());
 require("./models/index");
 
 
+// book router
+
+app.use("/books", require("./Routers/Routes/book"));
+
+
+
 
 
 
