@@ -30,3 +30,7 @@ const newBook = async (req, res) => {
 module.exports = {
     newBook
   };
+const getBooks = (req , res) => {
+
+}
+
