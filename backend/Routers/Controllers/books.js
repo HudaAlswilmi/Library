@@ -1,9 +1,10 @@
 const bookModel = require("../../models/Book");
 
-// const getBooks = (req , res) => {
-//     bookModel
-//     .find()
-// }
+const getBooks = (req , res) => {
+    bookModel
+    .find()
+    .then
+}
 
 const newBook = async (req, res) => {
   const { title, pages, price, image } = req.body;
