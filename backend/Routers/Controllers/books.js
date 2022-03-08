@@ -1,10 +1,10 @@
 const bookModel = require("../../models/Book");
 
-const getBooks = (req , res) => {
-    bookModel
-    .find()
-    .then
-}
+// const getBooks = (req , res) => {
+//     bookModel
+//     .find()
+//     .then
+// }
 
 const newBook = async (req, res) => {
   const { title, pages, price, image } = req.body;
@@ -30,4 +30,5 @@ const newBook = async (req, res) => {
 module.exports = {
     newBook
   };
+
 
