@@ -8,6 +8,9 @@ app.use(express.json({ limit: "30mb", extended: true }));
 app.use(cors());
 
 
+// imported the db file
+require("./models/index");
+
 
 
 
