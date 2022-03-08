@@ -1,11 +1,12 @@
 const express = require("express");
-const {newBook} = require('../Controllers/books')
+const {newBook, getBooks} = require('../Controllers/books')
 
 
 const bookRouter = express.Router();
 
 
 bookRouter.post('/add', newBook)
+bookRouter.get('/', getBooks)
 
 
 module.exports = bookRouter;
