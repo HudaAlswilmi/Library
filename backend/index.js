@@ -9,6 +9,17 @@ app.use(cors());
 
 
 
+// imported the db file
+require("./models/index");
+
+
+// book router
+
+app.use("/books", require("./Routers/Routes/book"));
+
+
+
+
 
 
 
