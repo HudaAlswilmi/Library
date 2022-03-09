@@ -45,7 +45,7 @@ const updateBooks = (req, res) => {
     });
 };
 const deleteBooks = (req, res) => {
-  const { _id } = req.body;
+  const { _id } = req.params;
   bookModel
     .findByIdAndDelete({ _id })
     .then(() => {
