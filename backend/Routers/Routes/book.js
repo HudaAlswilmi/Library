@@ -8,7 +8,7 @@ const bookRouter = express.Router();
 bookRouter.post('/add', newBook)
 bookRouter.get('/', getBooks)
 bookRouter.put('/update', updateBooks)
-bookRouter.delete('/delete', deleteBooks)
+bookRouter.delete('/delete/:_id', deleteBooks)
 
 
 module.exports = bookRouter;
