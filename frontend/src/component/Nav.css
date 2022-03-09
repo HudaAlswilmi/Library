@@ -1,0 +1,31 @@
+
+
+
+
+#navbar {
+  width: 100%;
+  background-color: rgb(15, 15, 15);
+  overflow: auto;
+  mask-repeat: no-repeat;
+  font-family: 'Aref Ruqaa', serif;
+
+}
+
+#navbar a {
+  float: left;
+  padding: 10px;
+  color: white;
+  font-size: 17px;
+  margin-left: 100px;
+  font-family: 'Mada', sans-serif;}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
