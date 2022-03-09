@@ -3,6 +3,7 @@ import Navbar from './component/Navbar';
 import Home from './component/Home'
 import  {Route ,Routes} from "react-router-dom"
 import Books from './component/Books';
+import Dbook from './component/Dbook';
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
     <Route
         exact
         path="/Books" element={<Books/>}/>
+
+<Route
+        exact
+        path="/Dbook/:_id" element={<Dbook/>}/>
     </Routes>
     </div>
   );
